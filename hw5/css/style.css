@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body{
+    font-weight: 400;
+    font-family: Montserrat;
+}
+section{
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.tittle{
+    font-size: 24px;
+    line-height: 29px;
+}
+.header-tittle{
+    width: 100%;
+    height: 120px;
+    background-color: #C4C4C4;
+    text-align: center;
+    font-size: 48px;
+    line-height: 59px;
+}
+
+.tittle-name{
+    text-align: center;
+    font-size: 36px;
+    line-height: 44px;
+}
+.tittle-blue{
+    color: #190452;
+}
+.tittle-red{
+    color: #9F1717;
+    text-align: right;
+}
+.tittle-green{
+    color: #1B5B05;
+    text-align: center;
+}
+
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+
