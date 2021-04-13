@@ -1,3 +1,2 @@
-# PowerCodeAcademy__HWs
-PowerCodeAcademy__HWs
-<a href=" https://radikmikhov.github.io/PowerCodeAcademy__HWs/index.html">HW's
+
+<a href=" https://radikmikhov.github.io/PowerCodeAcademy__HWs/index.html">HW's</a>
