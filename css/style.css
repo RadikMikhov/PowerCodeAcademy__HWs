@@ -1,4 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
-    background-color: DarkKhaki;
+    background: url(../img/bg-black.jpg) 0 0 / cover;
     text-align: center;
+    color: #fff;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+     
+}
+.container{
+    min-width: 1200px;
+    width: 100%;
+    font-size: 20px;
+    line-height: 32px;
+}
+.flexbox{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+header{
+    margin-top: 30px;
+}
+.link{
+    width: 300px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    margin-top: 20px;
 }
