@@ -1,0 +1,38 @@
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+.box{
+	background: rgb(37, 78, 34);
+	min-height: 50px;
+	margin-bottom: 20px;
+}
+
+.row__red .box{
+    background-color: red;
+}
+.row__orange .box{
+    background-color: orange;
+}
+.row__yellow .box{
+    background-color: yellow;
+}
+.row__green .box{
+    background-color: green; 
+}
+.row__sky .box{
+    background-color: rgb(2, 221, 250);
+}
+.row__blue .box{
+    background-color: blue;
+}
+.row__purple .box{
+    background-color: purple;
+}
+.row__black .box{
+    background-color: black;
+}
+.row__grey .box{
+    background-color: grey;
+}
