@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto&family=Source+Sans+Pro:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #F3F3F3;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #81868e;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.container{
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+}
+.container__small{
+    max-width: 1030px;
+    width: 100%;
+}
+.flexbox{
+    display: flex;
+}
+.header{
+    background-image: url(../img/header__bg.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.nav__menu{
+    padding-top: 25px;
+}
+.menu__item{
+    font-size: 16px;
+}
