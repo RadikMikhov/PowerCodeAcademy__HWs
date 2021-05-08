@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto&family=Source+Sans+Pro:wght@300;400&display=swap');
 
+@font-face {
+	font-family: 'BIG JOHN';
+	src: url('fonts/BIG JOHN.eot');
+	src: local('☺'), url('../fonts/BIG JOHN.woff') format('woff'), url('../fonts/BIG JOHN.ttf') format('truetype'), url('../fonts/BIG JOHN.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -10,6 +20,7 @@ body{
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 14px;
+    line-height: 25px;
     color: #81868e;
 }
 ul{
@@ -27,21 +38,216 @@ a{
 .container__small{
     max-width: 1030px;
     width: 100%;
+    margin: 0 auto;
 }
 .flexbox{
     display: flex;
 }
+.tittle{
+    font-family: 'Source Sans Pro';
+    font-size: 20px;
+    line-height: 12px;
+    font-weight: 300;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #2A313A;
+    text-align: center;
+}
+.text{
+    text-align: center;
+}
+
+/*----------------- Header -----------------------------*/
 .header{
     background-image: url(../img/header__bg.jpg);
+    filter: brightness(65%);
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
-
+    position: relative;
 }
-
+.header__logo{
+    font-family: 'BIG JOHN';
+    color: #fff;
+    font-size: 25px;
+    line-height: 12px;
+    padding-top: 10px;
+    position: absolute;
+    left: 10%;
+}
 .nav__menu{
     padding-top: 25px;
+    justify-content: flex-end;
 }
 .menu__item{
     font-size: 16px;
+    line-height: 12px;
+    width: 80px;
+    height: 33px;
+    padding-top: 10px;
+    text-align: center;
+    transition: all 0.3s;
+}
+.menu__item:hover,
+.menu__item--active{
+    border: 1px solid #fff;
+    border-radius: 20px;
+}
+.header__tittle{
+    font-family: 'Source Sans Pro';
+    font-size: 35px;
+    line-height: 70px;
+    font-weight: 300;
+    letter-spacing: 6px;
+    margin-top: 200px; 
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+}
+.header__text{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #fff;
+    margin: 0 auto;
+    text-align: center;
+    width: 600px;
+}
+.header__slider{
+    width: 35px;
+    height: 35px;
+    background-color: #19BD9A;
+    border-radius: 50%;
+	transition: all 0.3s;
+    margin: 200px auto 0;
+    position: relative;
+}
+.header__slider:hover{
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+.slider__arrow{
+    content: '';
+	width: 10px;
+	height: 10px;
+	border: 3px solid transparent;
+	border-bottom-color: #fff;
+	border-right-color: #fff;
+	transform: rotate(45deg);
+    position: absolute;
+    right: 38%;
+    top: 25%;
+}
+
+/*----------------- Bouncy -----------------------------*/
+.bouncy{
+    background-color: #fff;
+    
+}
+.bouncy .container__small{
+    display: flex;
+}
+.bouncy__right{
+    width: 50%;
+    margin-top: 100px;
+}
+.bouncy__tittle{
+    text-align-last: left;
+}
+.bouncy__text{
+    width: 470px;
+    margin-top: 50px;
+    letter-spacing: 1px;
+}
+.bouncy__btn{
+    margin-top: 35px;
+    color: #2A313A;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid #2A313A;
+    border-radius: 20px;
+    padding-top: 6px;
+    cursor: pointer;
+}
+.bouncy__btn:hover{
+    background-color: #19BD9A;
+}
+.bouncy__img{
+    margin: 80px 0 0 160px;
+    
+}
+
+/*----------------- About -----------------------------*/
+.about{
+    background-color: #F3F3F3;
+}
+.about__tittle{
+    margin-top: 80px;
+}
+.about__text{
+    width: 460px;
+    margin: 40px auto 0;
+}
+.about__icons{
+    display: flex;
+    width: 220px;
+    margin: 60px auto 0;
+}
+.heart,
+.mouse,
+.light{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #81868E;
+    margin-left: 10px;
+    transition: all 0.3s;
+}
+.heart__img,
+.mouse__img,
+.light__img{
+    width: 25px;
+    height: 25px;
+    margin: 15px 0 0 15px;
+}
+.heart:hover,
+.mouse:hover,
+.light:hover{
+    background-color: #19BD9A;
+    cursor: pointer;
+}
+.heart--active{
+    background-color: #19BD9A;
+}
+.creative__tittle{
+    margin-top: 60px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: #2A313A;
+}
+
+.creative__text{
+    margin-top: 40px;
+    display: flex;
+    font-size: 16px;
+    line-height: 28px;
+}
+.creative__text-left{
+    flex: 0 0 40%;
+    width: 40%;
+    padding-right: 120px;
+}
+.creative__text-right{
+    flex: 0 0 60%;
+    width: 60%;
+    padding-left: 60px;
+
+}
+.green{
+    color:#19BD9A;
+}
+.bold{
+    font-weight: bold;
 }
