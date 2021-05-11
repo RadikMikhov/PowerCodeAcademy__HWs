@@ -40,6 +40,9 @@ a{
     width: 100%;
     margin: 0 auto;
 }
+.container__full-screen{
+    width: 100%;
+}
 .flexbox{
     display: flex;
 }
@@ -52,15 +55,30 @@ a{
     text-transform: uppercase;
     color: #2A313A;
     text-align: center;
+    margin-top: 80px;
 }
 .text{
     text-align: center;
+    margin: 40px auto 0;
+    color: #81868E;
+}
+.btn__link{
+    color: #2A313A;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid #2A313A;
+    border-radius: 20px;
+    padding-top: 6px;
+    cursor: pointer;
+}
+.btn__link:hover{
+    background-color: #19BD9A;
 }
 
 /*----------------- Header -----------------------------*/
 .header{
     background-image: url(../img/header__bg.jpg);
-    filter: brightness(65%);
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -110,9 +128,9 @@ a{
     font-size: 16px;
     line-height: 28px;
     color: #fff;
-    margin: 0 auto;
     text-align: center;
     width: 600px;
+    margin: 0 auto;
 }
 .header__slider{
     width: 35px;
@@ -143,10 +161,6 @@ a{
 /*----------------- Bouncy -----------------------------*/
 .bouncy{
     background-color: #fff;
-    
-}
-.bouncy .container__small{
-    display: flex;
 }
 .bouncy__right{
     width: 50%;
@@ -161,34 +175,19 @@ a{
     letter-spacing: 1px;
 }
 .bouncy__btn{
-    margin-top: 35px;
-    color: #2A313A;
-    width: 150px;
-    height: 40px;
-    text-align: center;
-    border: 1px solid #2A313A;
-    border-radius: 20px;
-    padding-top: 6px;
-    cursor: pointer;
-}
-.bouncy__btn:hover{
-    background-color: #19BD9A;
+    margin: 35px 0 100px 0;
 }
 .bouncy__img{
     margin: 80px 0 0 160px;
-    
 }
 
 /*----------------- About -----------------------------*/
 .about{
     background-color: #F3F3F3;
-}
-.about__tittle{
-    margin-top: 80px;
+    margin-bottom: 100px;
 }
 .about__text{
     width: 460px;
-    margin: 40px auto 0;
 }
 .about__icons{
     display: flex;
@@ -227,7 +226,6 @@ a{
     font-size: 20px;
     color: #2A313A;
 }
-
 .creative__text{
     margin-top: 40px;
     display: flex;
@@ -243,11 +241,79 @@ a{
     flex: 0 0 60%;
     width: 60%;
     padding-left: 60px;
-
 }
 .green{
     color:#19BD9A;
 }
 .bold{
     font-weight: bold;
+}
+
+/*----------------- Works -----------------------------*/
+.works{
+    background-color: #fff;
+}
+.works__slider{
+    margin-top: 60px;
+}
+.works__banner{
+    background-image: url(../img/whiskey__banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 320px;
+    flex: 0 0 50%;
+    width: 50%;
+}
+.works__next-vintage,
+.works__next-branding{
+    flex: 0 0 25%;
+    width: 25%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 320px;
+}
+.works__next-vintage{
+    background-image: url(../img/whiskey__slider-dark.jpg);
+}
+.works__next-vintage:hover{
+    background-image: url(../img/whiskey__slider.jpg);
+} 
+.works__next-branding{
+    background-image: url(../img/book__slider-dark.jpg);
+}
+.works__next-branding:hover{
+    background-image: url(../img/book__slider.jpg);
+} 
+.slider__text{
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro';
+    font-size: 20px;
+    line-height: 12px;
+    font-weight: 300;
+    letter-spacing: 5px;
+    color: #fff;
+}
+.text__vintage,
+.text__branding{
+    position: absolute;
+    top: 45%;
+    left: 33%;
+}
+.slider__footer{
+    background-image: url(../img/slider__footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 110px;
+    justify-content: space-evenly;
+    color: #fff;
+}
+.slider__footer-text{
+    margin-top: 40px;
+}
+.slider__footer-btn{
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    margin-top: 30px;
 }
