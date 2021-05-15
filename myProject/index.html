@@ -8,13 +8,13 @@
     <title>Bouncy</title>
 </head>
 <body>
-    <section class="header">
-        <div class="container">
+    <header>
+        <div class="container__header">
             <div class="nav__menu flexbox">
                 <div class="header__logo">Bouncy</div>
                 <nav class="menu">
                     <ul class="menu__list flexbox">
-                        <li class="menu__item menu__item--active">
+                        <li class="menu__item">
                             <a href="#">Hello</a>
                         </li>
                         <li class="menu__item">
@@ -38,13 +38,15 @@
                     </ul>
                 </nav>
             </div>
-            <h1 class="header__tittle tittle">We Are Code Cafe</h1>
-            <p class="header__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum</p>
+            <div class="header__info">
+                <h1 class="header__tittle tittle">We Are Code Cafe</h1>
+                <p class="header__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum</p>
+            </div>
             <div class="header__slider">
                 <div class="slider__arrow"></div>
             </div>
         </div>
-    </section>
+    </header>
 
     <section class="bouncy">
         <div class="container__small flexbox">
@@ -63,15 +65,15 @@
         <div class="container">
             <div class="tittle about__tittle">Details about bouncy</div>
             <div class="about__text text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</div>
-            <div class="about__icons">
-                <div class="heart heart--active">
-                    <img class="heart__img" src="img/heart.png" alt="heart">
+            <div class="about__icons flexbox">
+                <div class="icons__item">
+                    <img class="icons__img" src="img/png/heart.png" alt="heart">
                 </div>
-                <div class="mouse">
-                    <img class="mouse__img" src="img/mouse.png" alt="mouse">
+                <div class="icons__item">
+                    <img class="icons__img" src="img/png/mouse.png" alt="mouse">
                 </div>
-                <div class="light">
-                    <img class="light__img" src="img/light.png" alt="light">
+                <div class="icons__item">
+                    <img class="icons__img" src="img/png/light.png" alt="light">
                 </div>
             </div>
             <div class="creative">
@@ -91,12 +93,17 @@
             <div class="works__text text">At vero eos et accusamus et iusto odio         dignissimos ducimus qui blanditiis praesentium
             </div>
             <div class="works__slider flexbox">
-                <a href="#" class="works__banner"></a>
-                <a href="#" class="works__next-vintage flexbox">
+                <a href="#" class="slider__item slider__item-vintage">
                     <p class="slider__text text__vintage">vintage</p>
                 </a>
-                <a href="#" class="works__next-branding flexbox">    
+                <a href="#" class="slider__item slider__item-branding">    
                     <p class="slider__text text__branding">branding</p>
+                </a>
+                <a href="#" class="slider__item slider__item-design">
+                    <p class="slider__text text__design">web design</p>
+                </a>
+                <a href="#" class="slider__item slider__item-ux">    
+                    <p class="slider__text text__ux">ui/ux</p>
                 </a>
             </div>
             <div class="slider__footer flexbox">
@@ -108,8 +115,94 @@
     </section>
 
     <section class="services">
-        <div class="tittle services__tittle">our services</div>
-        <div class="text services__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</div>
+        <div class="container">
+            <div class="tittle services__tittle">our services</div>
+            <div class="text services__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</div>
+            <div class="services__list flexbox">
+                <div class="services__left flexbox">
+                    <div class="services__left-icons">
+                        <div class="icons__item">
+                            <img class="icons__img" src="img/png/handyman.png" alt="handyman">
+                        </div>
+                        <div class="icons__item">
+                            <img class="icons__img" src="img/png/roller.png" alt="roller">
+                        </div>
+                        <div class="icons__item">
+                            <img class="icons__img" src="img/png/gamepad.png" alt="gamepad">
+                        </div>
+                        <div class="icons__item">
+                            <img class="icons__img" src="img/png/charge.png" alt="charge">
+                        </div>
+                    </div>
+                    <div class="services__left-about">
+                        <div class="services__left-tittle">Graphic Design</div>
+                        <div class="services__left-text">
+                            <p>At vero eos et accusamus et <span class="green">iusto</span> odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti</p>
+                            <p>quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, <span class="green">similique sunt</span> in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="services__right">
+                    <div class="services__right-circles flexbox">
+                        <div class="services__circle">
+                            <div class="circle">
+                                <svg viewbox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" fill="#fff"/>
+                                <path fill="none" stroke-linecap="round" stroke-width="5" stroke="#19BD9A"
+                                      stroke-dasharray="200.6,125.6"
+                                      d="M50 10
+                                         a 40 40 0 0 1 0 80
+                                         a 40 40 0 0 1 0 -80"/>
+                                <text x="50" y="50" text-anchor="middle" dy="7" font-size="20">80%</text>
+                              </svg>
+                            </div>
+                            <div class="service__right-text">Branding</div>
+                        </div>
+                        <div class="services__circle">
+                            <div class="circle">
+                                <svg viewbox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" fill="#fff"/>
+                                <path fill="none" stroke-linecap="round" stroke-width="5" stroke="#19BD9A"
+                                      stroke-dasharray="185.6,155.6"
+                                      d="M50 10
+                                         a 40 40 0 0 1 0 80
+                                         a 40 40 0 0 1 0 -80"/>
+                                <text x="50" y="50" text-anchor="middle" dy="7" font-size="20">75%</text>
+                              </svg>
+                            </div>
+                            <div class="service__right-text te">Web Design</div>
+                        </div>
+                        <div class="services__circle">
+                            <div class="circle">
+                                <svg viewbox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" fill="#fff"/>
+                                <path fill="none" stroke-linecap="round" stroke-width="5" stroke="#19BD9A"
+                                      stroke-dasharray="155.6,155.6"
+                                      d="M50 10
+                                         a 40 40 0 0 1 0 80
+                                         a 40 40 0 0 1 0 -80"/>
+                                <text x="50" y="50" text-anchor="middle" dy="7" font-size="20">60%</text>
+                              </svg>
+                            </div>
+                            <div class="service__right-text">UI/UX</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    ]
+    <section class="impressed">
+        <div class="container">
+            <div class="impressed__left">
+                <div class="impressed__tittle">Impressed ?</div>
+                <div class="impressed__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias</div>
+                <div class="imressed__coment">
+                    <div class="coment__name"><span class="bold">Abdullah Noman</span> <br>Creatice Director, <span class="green">Code Cafe</span></div>
+                    
+                </div>
+            </div>
+        </div>
     </section>
     <script src="js/script.js"></script>
 </body>

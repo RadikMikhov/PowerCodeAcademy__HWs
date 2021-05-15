@@ -8,8 +8,6 @@
 	font-style: normal;
 }
 
-
-
 *{
     margin: 0;
     padding: 0;
@@ -30,10 +28,18 @@ a{
     text-decoration: none;
     color: #fff;
 }
+section{
+    padding-top: 5px;
+}
 .container{
     max-width: 1170px;
     width: 100%;
     margin: 0 auto;
+}
+.container__header{
+    flex-direction: column;
+	justify-content: space-between;
+    min-height: 100vh;
 }
 .container__small{
     max-width: 1030px;
@@ -49,7 +55,7 @@ a{
 .tittle{
     font-family: 'Source Sans Pro';
     font-size: 20px;
-    line-height: 12px;
+    line-height: 20px;
     font-weight: 300;
     letter-spacing: 5px;
     text-transform: uppercase;
@@ -76,10 +82,10 @@ a{
     background-color: #19BD9A;
 }
 
+
 /*----------------- Header -----------------------------*/
-.header{
+header{
     background-image: url(../img/header__bg.jpg);
-    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -88,7 +94,7 @@ a{
     font-family: 'BIG JOHN';
     color: #fff;
     font-size: 25px;
-    line-height: 12px;
+    line-height: 25px;
     padding-top: 10px;
     position: absolute;
     left: 10%;
@@ -96,18 +102,18 @@ a{
 .nav__menu{
     padding-top: 25px;
     justify-content: flex-end;
+    margin-right: 10%;
 }
 .menu__item{
     font-size: 16px;
-    line-height: 12px;
+    line-height: 16px;
     width: 80px;
     height: 33px;
     padding-top: 10px;
     text-align: center;
     transition: all 0.3s;
 }
-.menu__item:hover,
-.menu__item--active{
+.menu__item:hover{
     border: 1px solid #fff;
     border-radius: 20px;
 }
@@ -158,6 +164,7 @@ a{
     top: 25%;
 }
 
+
 /*----------------- Bouncy -----------------------------*/
 .bouncy{
     background-color: #fff;
@@ -165,9 +172,6 @@ a{
 .bouncy__right{
     width: 50%;
     margin-top: 100px;
-}
-.bouncy__tittle{
-    text-align-last: left;
 }
 .bouncy__text{
     width: 470px;
@@ -181,6 +185,7 @@ a{
     margin: 80px 0 0 160px;
 }
 
+
 /*----------------- About -----------------------------*/
 .about{
     background-color: #F3F3F3;
@@ -190,13 +195,10 @@ a{
     width: 460px;
 }
 .about__icons{
-    display: flex;
     width: 220px;
     margin: 60px auto 0;
 }
-.heart,
-.mouse,
-.light{
+.icons__item{
     width: 55px;
     height: 55px;
     border-radius: 50%;
@@ -204,21 +206,14 @@ a{
     margin-left: 10px;
     transition: all 0.3s;
 }
-.heart__img,
-.mouse__img,
-.light__img{
-    width: 25px;
-    height: 25px;
-    margin: 15px 0 0 15px;
-}
-.heart:hover,
-.mouse:hover,
-.light:hover{
+.icons__item:hover{
     background-color: #19BD9A;
     cursor: pointer;
 }
-.heart--active{
-    background-color: #19BD9A;
+.icons__img{
+    width: 25px;
+    height: 25px;
+    margin: 15px 0 0 15px;
 }
 .creative__tittle{
     margin-top: 60px;
@@ -249,6 +244,7 @@ a{
     font-weight: bold;
 }
 
+
 /*----------------- Works -----------------------------*/
 .works{
     background-color: #fff;
@@ -256,46 +252,54 @@ a{
 .works__slider{
     margin-top: 60px;
 }
-.works__banner{
-    background-image: url(../img/whiskey__banner.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 320px;
-    flex: 0 0 50%;
-    width: 50%;
-}
-.works__next-vintage,
-.works__next-branding{
-    flex: 0 0 25%;
-    width: 25%;
+.slider__item{
+    flex: 1;
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
     height: 320px;
+    transition: all 0.5s;
 }
-.works__next-vintage{
+.slider__item:hover{
+    flex: 2.5;
+}
+.slider__item-vintage{
     background-image: url(../img/whiskey__slider-dark.jpg);
 }
-.works__next-vintage:hover{
+.slider__item-vintage:hover{
     background-image: url(../img/whiskey__slider.jpg);
 } 
-.works__next-branding{
+.slider__item-branding{
     background-image: url(../img/book__slider-dark.jpg);
 }
-.works__next-branding:hover{
+.slider__item-branding:hover{
     background-image: url(../img/book__slider.jpg);
 } 
+.slider__item-design{
+    background-image: url(../img/mag__slider-dark.jpg);
+}
+.slider__item-design:hover{
+    background-image: url(../img/mag__slider.jpg);
+}
+.slider__item-ux{
+    background-image: url(../img/label__slider-dark.jpg);
+}
+.slider__item-ux:hover{
+    background-image: url(../img/label__slider.jpg);
+}
 .slider__text{
     text-transform: uppercase;
     font-family: 'Source Sans Pro';
     font-size: 20px;
-    line-height: 12px;
+    line-height: 20px;
     font-weight: 300;
     letter-spacing: 5px;
     color: #fff;
 }
 .text__vintage,
-.text__branding{
+.text__branding,
+.text__design,
+.text__ux{
     position: absolute;
     top: 45%;
     left: 33%;
@@ -316,4 +320,69 @@ a{
     border: 1px solid #fff;
     border-radius: 20px;
     margin-top: 30px;
+}
+
+
+/*----------------- Services -----------------------------*/
+.services__list{
+    margin-top: 60px;
+}
+.services__left{
+    width: 50%;
+    margin-right: 40px;
+}
+.services__left-icons{
+    margin-right: 40px;
+}
+.icons__item{
+    margin-bottom: 15px;
+}
+.services__left-tittle{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: #2A313A;
+}
+.services__left-text p{
+    margin: 40px 0 30px 0;
+    font-size: 16px;
+    line-height: 28px;
+}
+.services__right-circles{
+    margin-top: 60px;
+}
+
+.circle{
+    margin-left: 40px;
+}
+.service__right-text{
+    margin: 20px 0 0 40px;
+    text-align: center;
+}
+svg{
+    width: 125px;
+    height: 125px;
+}
+
+
+/*----------------- Impressed -----------------------------*/
+.impressed{
+    background-image: url(../img/impressed__bg-dark.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 400px;
+    margin-top: 140px;
+}
+.impressed:hover{
+    background-image: url(../img/impressed__bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.impressed__left{
+    width: 50%;
+}
+.impressed__tittle{
+    margin: 80px 0 60px ;
+}
+.impressed__text{
+    margin-bottom: 60px;
 }
