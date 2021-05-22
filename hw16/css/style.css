@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(214, 214, 213);
+    
+}
+ul{
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+    list-style-type: decimal;
+    
+}
+li{
+    font-size: 14px;
+    line-height: 20px;
+    margin: 1% 0 0 10%;
+    text-align: left;
+    
+}
+.submenu{
+    font-size: 14px;
+    line-height: 20px;
+    text-align: left;
+}
+p{
+    margin: 50px auto 0;
+    background-color: #fff;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 30px;
+    line-height: 30px;
+}
