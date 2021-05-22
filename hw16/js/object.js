@@ -1,29 +1,29 @@
-// let obj = {
-// 	bread: 25,
-// 	milk: 30,
-// 	chips: 50,
-// 	water: 10,
-// 	cucumbers: 42
-// }
-// let sum = 0;
-// let bigPrice = 0;
-// let bigName = "";
-// let minPrice = 0;
-// let minName = "";
+let obj = {
+	bread: 25,
+	milk: 30,
+	chips: 50,
+	water: 10,
+	cucumbers: 42
+}
+let sum = 0;
+let bigPrice = 0;
+let bigName = "";
+let minPrice = 0;
+let minName = "";
 
-// for (let key in obj) {
-//     sum += obj[key];
+for (let key in obj) {
+    sum += obj[key];
     
-//     if (obj[key] > bigPrice) {
-//         bigPrice = obj[key]
-//         bigName = key;               
-//     } 
-// }
+    if (obj[key] > bigPrice) {
+        bigPrice = obj[key]
+        bigName = key;               
+    } 
+}
 
-// console.log('Общая стоимость покупок: ', sum);
-// console.log('Самая большая стоимость у: ', bigName);
+console.log('Общая стоимость покупок: ', sum);
+console.log('Самая большая стоимость у: ', bigName);
 
-
+//-----------------------------------------------------------
 let films = [ 
     {
 	    title: "Joker",
