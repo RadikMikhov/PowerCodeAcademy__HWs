@@ -8,7 +8,7 @@ let obj = {
 let sum = 0;
 let bigPrice = 0;
 let bigName = "";
-let minPrice = 0;
+let minPrice = Infinity;
 let minName = "";
 
 for (let key in obj) {
@@ -17,11 +17,19 @@ for (let key in obj) {
     if (obj[key] > bigPrice) {
         bigPrice = obj[key]
         bigName = key;               
-    } 
+    }
+
+
+    if (obj[key] < minPrice) {
+        minPrice = obj[key]
+        minName = key
+        }
 }
 
 console.log('Общая стоимость покупок: ', sum);
 console.log('Самая большая стоимость у: ', bigName);
+console.log('Самая меньшая стоимость у: ', minName);
+
 
 //-----------------------------------------------------------
 let films = [ 
@@ -54,13 +62,16 @@ let films = [
 
 let sumRating = 0;
 
-for (let key in films.rating) {
-    sumRating += films.rating[key] / 5;
-}
-console.log('Средний рейтинг фильмов: ', sumRating);
+for (let i = 0; i < films.length; i++) {
+    sumRating += films[i].rating ? films[i].rating : 0;
 
-for (let key in films.premier) {
-    if (films.premier === true) {
-        console.log(films.title);
+    if (films[i].premier) {
+        console.log("Премьера:", films[i].title)
     }
+
+    if (films[i].rating > 8) {
+        console.log(films[i].title, '-', films[i].rating)
+    } 
 }
+console.log('Средняя оценка - ', sumRating / films.length);
+

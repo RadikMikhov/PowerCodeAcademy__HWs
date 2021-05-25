@@ -1,57 +1,50 @@
-let array = [1, 2, 3, 4, 5];
-
-function newArray(){
-    let add = 0;
-    for (let i = 0; i < newArray.length; i++) {
-      let Addindex = newArray[i];
-      add += Addindex;
+function doubleArr(arr) {
+    let newArr = [];
+    for (i = 0; i < arr.length; i++) {
+        newArr.push(arr[i] * 2);  
     }
-    return add;
+    return newArr;
 }
-for (let i = 0; i < array.length; i++) {
-        array[i] *= 2;
-    }
 
-console.log(array);
+console.log(doubleArr([3, 5, 18]))
+
 
 //-------------------------------------------------------
-function fizzBuzz() {
-    for (let i = 1; i <= 100; i++) {
-        let output = "";
-        if (i%3 == 0 && i%5 == 0) {
-            output = "Fizzbuzz";
-        }else if (i%3 == 0) {
-            output += "Fizz";
-        }else if (i%5 == 0) {
-            output += "Buzz"; 
+function fizzBuzz (n) {
+    for (let i = 0; i < n; i++) {
+        if ( i%3 === 0 && i%5 === 0 ){
+            console.log('FizzBuzz')
+        } else if ( i%3 === 0) {
+            console.log('Fizz');
+        } else if ( i%5 === 0) {
+            console.log('Buzz');
         }else {
-            output = i
+            console.log(i);
         }
-    console.log(output);
     }
 }
-fizzBuzz()
+
+let count = +prompt('Введите количество');
+fizzBuzz(count);
+
 //-------------------------------------------------------
-let A = [
+let arr1 = [
     [4, 5, 13],
     [-5, 0, 4],
     [12, -3, 12]
 ];
-let B = [
+let arr2 = [
     [5, 8, 0],
     [87, 65, 7],
     [-50, 24, 43]
 ];
 
-function SumMatrix() {
-    let  C = [];
-    for (let i = 0; i < A.length; i++){
-        C [i] = [];
-        for (let j = 0; j < A[0].length; j++) {
-            C [i][j] = A [i][j] + B [i][j]; 
-        }
-        console.log(C);
+let resArr= [];
+
+for (let i = 0; i < arr1.length; i++){
+    resArr[i] = [];
+    for (let j = 0; j < arr1[i].length; j++){
+        resArr [i][j] = arr1 [i][j] + arr2 [i][j];
     }
-    return C;
-};
-SumMatrix()
+}
+console.log(resArr);
