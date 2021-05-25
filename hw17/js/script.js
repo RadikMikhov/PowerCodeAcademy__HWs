@@ -54,7 +54,8 @@ for ( let i = 0; i < features.length; i++) {
     // Создаем ссылку
     let featuresLink = document.createElement('a');
     featuresLink.classList.add('btn');
-    featuresLink.innerText = 'Read more', features[i].link;
+    featuresLink.setAttribute('href', features[i].link);
+    featuresLink.innerText = 'Read more';
     newFeatures.appendChild(featuresLink);
 
     featuresContainer.appendChild(newFeatures);
