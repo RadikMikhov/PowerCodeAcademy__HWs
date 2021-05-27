@@ -29,17 +29,12 @@ a{
     color: #fff;
 }
 section{
-    padding-top: 5px;
+    padding: 5px 0 ;
 }
 .container{
     max-width: 1170px;
     width: 100%;
     margin: 0 auto;
-}
-.container__header{
-    flex-direction: column;
-	justify-content: space-between;
-    min-height: 100vh;
 }
 .container__small{
     max-width: 1030px;
@@ -48,6 +43,11 @@ section{
 }
 .container__full-screen{
     width: 100%;
+}
+.container__header{
+    flex-direction: column;
+	justify-content: space-between;
+    min-height: 100vh;
 }
 .flexbox{
     display: flex;
@@ -80,6 +80,12 @@ section{
 }
 .btn__link:hover{
     background-color: #19BD9A;
+}
+.green{
+    color:#19BD9A;
+}
+.bold{
+    font-weight: bold;
 }
 
 
@@ -160,7 +166,7 @@ header{
 	border-right-color: #fff;
 	transform: rotate(45deg);
     position: absolute;
-    right: 38%;
+    right: 35%;
     top: 25%;
 }
 
@@ -236,12 +242,6 @@ header{
     flex: 0 0 60%;
     width: 60%;
     padding-left: 60px;
-}
-.green{
-    color:#19BD9A;
-}
-.bold{
-    font-weight: bold;
 }
 
 
@@ -385,18 +385,101 @@ svg{
     background-size: cover;
     min-height: 400px;
     margin-top: 140px;
+    color: #B2B3B3;
+    position: relative;
 }
 .impressed:hover{
     background-image: url(../img/impressed__bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
-.impressed__left{
+.impressed__item{
     width: 50%;
 }
 .impressed__tittle{
-    margin: 80px 0 60px ;
+    margin: 80px 0 60px;
+    font-family: 'Source Sans Pro';
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 300;
+    letter-spacing: 5px;
+    text-transform: uppercase;
 }
 .impressed__text{
-    margin-bottom: 60px;
+    margin-bottom: 30px;
+}
+.coment__name{
+    text-transform: uppercase;
+}
+.impressed__img{
+    position: absolute;
+    top: -10%;
+    right: 10%;
+}
+.impressed__bouncy{
+    position: absolute;
+    top: 20%;
+    right: 20%;
+}
+
+
+/*----------------- Portfolio -----------------------------*/
+.portfolio{
+    background-color: #F3F3F3;
+}
+.portfolio__menu{
+    margin: 80px auto 0;
+    width: 600px;
+    justify-content: space-evenly;
+}
+.portfolio__item a{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #2A313A;
+    font-size: 16px;
+    text-align: center;
+    display: inline-block;
+    padding-bottom: 20px;
+}
+.portfolio__item a:hover{
+    border-bottom: 2px solid #19BD9A;
+    
+}
+.portfolio__img{
+    margin-top: 60px;
+}
+.img__uno,
+.img__dos,
+.img__tres,
+.img__cuatro{
+    width: 270px;
+    margin-left: 10px;
+}
+.img__item{
+    margin-bottom: 10px;
+}
+
+.portfolio__footer{
+    margin-top: 40px;
+    position: relative;
+}
+.portfolio__footer-text{
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: 30%;
+    right: 23%;
+}
+.portfolio__footer-btn{
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    position: absolute;
+    top: 60%;
+    right: 45%;
+}
+
+/*----------------- Team -----------------------------*/
+.team{
+    background-color: #fff;
 }
