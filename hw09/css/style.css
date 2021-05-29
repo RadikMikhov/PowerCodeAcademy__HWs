@@ -19,25 +19,25 @@ img{
     flex-wrap: wrap;
     background-color: #000;
 }
-.sell__item{
+.cell__item{
     flex: 0 0 12.5%;
     max-width: 12.5%;
 }
-.sell__item:after{
+.cell__item:after{
     content: '';
     display: block;
     padding-top: 100%;
 }
-.sell__item:nth-child(2n + 1) {
+.cell__item:nth-child(2n + 1) {
     background-color: #eee;
 }
-.sell__number{
+.cell__number{
     position: absolute;
     right: -20px;
     font-size: 20px;
     color: #fff;
 }
-.sell__letters{
+.cell__letters{
     position: absolute;
     top: -25px;
     font-size: 20px;
@@ -47,28 +47,28 @@ img{
     right: 0;
     color: #fff;
 }
-.sell__number:nth-of-type(1){
+.cell__number:nth-of-type(1){
     top: 5%
 }
-.sell__number:nth-of-type(2){
+.cell__number:nth-of-type(2){
     top: 18%
 }
-.sell__number:nth-of-type(3){
+.cell__number:nth-of-type(3){
     top: 30%
 }
-.sell__number:nth-of-type(4){
+.cell__number:nth-of-type(4){
     top: 43%
 }
-.sell__number:nth-of-type(5){
+.cell__number:nth-of-type(5){
     top: 55%
 }
-.sell__number:nth-of-type(6){
+.cell__number:nth-of-type(6){
     top: 68%
 }
-.sell__number:nth-of-type(7){
+.cell__number:nth-of-type(7){
     top: 80%
 }
-.sell__number:nth-of-type(8){
+.cell__number:nth-of-type(8){
     top: 93%
 }
 
