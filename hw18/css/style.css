@@ -59,8 +59,8 @@ li{
 }
 .todo__item,
 .comleated__item{
-    width: 500px;
-    height: 30px;
+    width: 80%;
+    height: 5%;
     padding: 15px;
     
 }
