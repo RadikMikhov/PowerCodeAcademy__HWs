@@ -10,18 +10,36 @@
 <body>
     <div class="container">
         <h1>Домашнее задание 18: ToDo List</h1>
-        <form action="#" name="formInput" class="todo__form">
-            <input class="todo__input" name="text" type="text" placeholder="Добавить в список">
-            <button type="submit" class="add__btn">Add</button>
-        </form>
-        <div class="toDo__list">
-            <ul class="todo__left" id="toDo">
-                 
-            </ul>
-            <ul class="compleated">
-                
-            </ul>
+        <div class="todo__form">
+            <input type="text" id="todo__input" class="todo__input" placeholder="Добавить в список">
+            <button type="submit" id="add__btn" class="add__btn">Add</button>
         </div>
+        <div class="toDo__list">
+			<div class="inprogress">
+				<h2 class="tittle">Задачи в процессе</h2>
+				<div id="inprogress__container">
+					<label class="inprogress__item">
+						<input type="checkbox">
+						<span>Go to the work</span>
+					</label>
+					<label class="inprogress__item">
+						<input type="checkbox">
+						<span>Go to the courses</span>
+					</label>
+				</div>
+			</div>
+			<div class="success">
+				<h2 class="tittle">Выполненные задачи</h2>
+				<div id="success__container">
+					<div class="success__item">
+						<span>Get out of bed</span>
+						<button type="button">Delete</button>
+					</div>
+				</div>				
+			</div>
+		</div>
+    </div>
+
 
     <script src="js/script.js" ></script>
 </body>

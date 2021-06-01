@@ -1,29 +1,57 @@
-let inputText = document.querySelector(".todo__input");
-let btn = document.querySelector(".add__btn");
-let newLi = document.querySelector(".todo__left");
-let newCheckbox = document.querySelector(".checkbox");
-let compleatedItem = document.querySelector(".comleated__item");
+let inputText = document.getElementById('todo__input');
+let btn = document.getElementById('add__btn');
+let inProgressContainer = document.getElementById('inprogress__container');
+let SuccessContainer = document.getElementById('success__container');
 
 btn.addEventListener('click', addItem);
-btn.addEventListener("keyup", function(event) {
-  if (event.keyCode === 13) {
-    event.preventDefault();
-    submit.click();
-  }
-});
 
 function addItem() {
-  let getValue = inputText.value;
-  let createElement = document.createElement("li");
-  createElement.classList.add("todo__item");
+  	let getValue = inputText.value;
+	inputText.value = "";
 
-  let createCheckbox = document.createElement('input');
-  createCheckbox.setAttribute('class', 'checkbox');
-  createCheckbox.setAttribute('type', 'checkbox');
-  newLi.appendChild(createCheckbox);
-  console.log(createCheckbox)
+  	let createLabel = document.createElement('label');
+  	createLabel.classList.add('inprogress__item');
 
-  createElement.textContent = getValue;
-  newLi.appendChild(createElement);
-  inputText.value = "";
+	let createCheckbox = document.createElement('input');
+	createCheckbox.setAttribute('type', 'checkbox');
+	createCheckbox.addEventListener('change', doneToDo);
+	createLabel.appendChild(createCheckbox);
+
+	let createSpan = document.createElement('span');
+	createSpan.innerText = getValue;
+	createLabel.appendChild(createSpan);
+
+	inProgressContainer.appendChild(createLabel);
 };
+
+let todoCheckboxes = document.querySelectorAll('.inprogress__item input[type="checkbox"]');
+
+for(let i = 0; i < todoCheckboxes.length; i++){
+	todoCheckboxes[i].addEventListener('change', doneToDo)
+}
+
+function doneToDo(){
+	let getValue = this.nextElementSibling.innerText;
+	inProgressContainer.removeChild(this.parentElement)
+	
+	let successToDo = document.createElement('div')
+	successToDo.classList.add('success__item');
+	successToDo.innerHTML = `<span>${getValue}</span>`
+	
+	let removeBtn = document.createElement('button');
+	removeBtn.setAttribute('type', 'button');
+	removeBtn.innerText = 'Delete';
+	removeBtn.addEventListener('click', removeToDo)
+	successToDo.appendChild(removeBtn)
+	SuccessContainer.appendChild(successToDo)
+}
+
+let removeButtons = document.querySelectorAll('.success__item button')
+
+for(let i = 0; i < removeButtons.length; i++){
+	removeButtons[i].addEventListener('click', removeToDo)
+}
+
+function removeToDo(){
+	SuccessContainer.removeChild(this.parentElement)
+}

@@ -5,27 +5,15 @@
     font-size: 16px;
     text-align: center;
 }
-
 h1{
     margin: 30px;
     font-size: 30px;
 }
-li{
-    margin: 10px auto;
-    min-width: 200px;
-    min-height: 50px;
-    background-color: #fff;
-    color: #000;
-    padding: 15px;
-    font-size: 20px;
-    list-style-type: none
-
-}
 .todo__input{
-    width: 300px;
-    height: 50px;
-    padding: 10px;
-    
+    width: 40%;
+    height: 10%;
+    padding: 15px;
+    border-radius: 20px;
 }
 .add__btn{
     width: 100px;
@@ -33,6 +21,7 @@ li{
     background-color: #08c;
     color: yellow;
     margin-left: 30px;
+    border-radius: 20px;
 }
 .add__btn:hover{
     border: 1px solid yellow;
@@ -44,31 +33,46 @@ li{
     border-top: 5px solid #08c;
     margin-top: 50px;
 }
-.todo__left{
+.inprogress{
     width: 50%;
     border-right: 5px solid #08c;
     padding: 20px;
     background-color: rgb(241, 247, 160);
+}
+.tittle{
+    font-style: italic;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.inprogress__item,
+.success__item{
+    width: 80%;
+    height: 5%;
+    padding: 15px;
+    background-color: #fff;
+    display: block;
+    margin: 0 auto 15px;
+    border-radius: 20px;
     position: relative;
 }
-.compleated{
+label input{
+    position: absolute;
+    top: 40%;
+    left: 5%;
+}
+.success{
     padding: 20px;
     text-align: center;
     width: 50%;
     background-color: rgb(181, 196, 247);
 }
-.todo__item,
-.comleated__item{
-    width: 80%;
-    height: 5%;
-    padding: 15px;
-    
-}
-.checkbox{
-    margin-top: 25px;
-    width: 20px;
-    height: 20px;
+.success__item button{
     position: absolute;
-    left: 5%;
-    cursor: pointer;
+    top: 30%;
+    right: 5%;
+    background-color: red;
+    color: #fff;
+    width: 20%;
+    height: 50%;
+    border-radius: 10px;
 }
