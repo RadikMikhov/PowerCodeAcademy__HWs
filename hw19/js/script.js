@@ -48,8 +48,6 @@ for ( let i = 0; i < photos.length; i++ ) {
     userList.appendChild(newUser);
 }
 
-let userInfo = document.getElementById('userInfo');
-
 let xhr = new XMLHttpRequest();
 
 xhr.onreadystatechange = function() {
@@ -57,34 +55,38 @@ xhr.onreadystatechange = function() {
         let data = JSON.parse(xhr.responseText);
         
         for ( let i = 0; i < data.length; i++) {
+            let newUserItem = document.createElement('div');
+            newUserItem.classList.add('user__item');
+
             let newInfo = document.createElement('div');
             newInfo.classList.add('user__info');
+            newUserItem.appendChild(newInfo);
 
             // Добавляем имя нового пользователя
             let newUserName = document.createElement('div');
             newUserName.classList.add('user__name');
-            newUserName = data[i].name;
+            newUserName.innerText = data[i].name;
             newInfo.appendChild(newUserName);
 
             // Добавляем новую должность
             let newPosition = document.createElement('div');
             newPosition.classList.add('user__position');
-            newPosition = data[i].company.catchPhrase;
+            newPosition.innerText = data[i].company.catchPhrase;
             newInfo.appendChild(newPosition);
 
             //  Добавляем новую компанию
             let newCompany = document.createElement('div');
             newCompany.classList.add('user__company');
-            newCompany = data[i].company.name;
+            newCompany.innerText = data[i].company.name;
             newInfo.appendChild(newCompany);
 
             //  Добавляем новый эмейл
             let newEmail = document.createElement('div');
             newEmail.classList.add('user__email');
-            newEmail = data[i].email;
+            newEmail.innerText = data[i].email;
             newInfo.appendChild(newEmail);
 
-            userInfo.appendChild(newInfo);
+            userList.appendChild(newUserItem);
         }
     }
 }
