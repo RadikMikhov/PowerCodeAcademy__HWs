@@ -457,6 +457,17 @@ svg{
 }
 .img__item{
     margin-bottom: 10px;
+    position: relative;
+}
+.img__item:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 7;
+}
+.img__hover{
+    position: absolute;
+}
+.hover__title{
+    top: 0;
 }
 
 .portfolio__footer{
@@ -482,4 +493,286 @@ svg{
 /*----------------- Team -----------------------------*/
 .team{
     background-color: #fff;
+}
+.team__item{
+    margin-top: 65px;
+    position: relative;
+}
+.team__slider.slick-initialized .slick-slide {
+    display: flex;
+}
+.team__slider .slick-dots{
+    position: absolute;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    right: 0;
+    bottom: -50px;
+}
+.team__slider .slick-dots li{
+    margin: 10px;
+}
+.team__slider .slick-dots button{
+    font-size: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #aaa;
+    border: 0;
+    outline: none;
+}
+.team__slider .slick-dots li.slick-active button{
+    background-color: #19BD9A;
+}
+.team__item-photo{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.team__item-info{
+    display: inline-block;
+    flex: 0 0 50%;
+    max-width: 50%;
+    text-align: right;
+    margin-right: 40px;
+}
+.team__line{
+    border: 1px solid #19BD9A;
+    width: 50px;
+    position: absolute;
+    right: -5%;
+    top: 10%;
+    transform: rotate(90deg);
+}
+.team__info-tittle{
+    font-size: 20px;
+    color: #2A313A;
+    padding: 10px 20px;
+}
+.team__info-position{
+    font-style: italic;
+    font-size: 14px;
+    line-height: 25px;
+    text-transform: uppercase;
+}
+.team__info-text{
+    margin-top: 30px;
+}
+.team__info-progress{
+    margin-top: 50px;
+}
+
+.progress__line80,
+.progress__line65,
+.progress__line75{
+    background: #eee;
+    border-radius: 13px;
+    height: 15px;
+    width: 350px;
+    padding: 3px;
+    margin-top: 35px;
+    display: inline-block;
+    position: relative;
+}
+.progress__line80:after {
+    content: '';
+    display: block;
+    background: #19BD9A;
+    width: 80%;
+    height: 100%;
+    border-radius: 9px;
+}
+.progress__line65:after {
+    content: '';
+    display: block;
+    background: #19BD9A;
+    width: 65%;
+    height: 100%;
+    border-radius: 9px;
+}
+.progress__line75:after {
+    content: '';
+    display: block;
+    background: #19BD9A;
+    width: 75%;
+    height: 100%;
+    border-radius: 9px;
+}
+.progress__text{
+    font-size: 16px;
+    line-height: 25px;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 90%;
+    left: 0;
+}
+.progress__pers{
+    position: absolute;
+    bottom: 90%;
+    right: 0;
+}
+.progress__pers:after{
+    content: ' %';
+}
+.team__footer{
+    margin-top: 100px;
+    position: relative;
+}
+.team__footer img{
+    width: 100%;
+}
+.team__footer-text{
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: 28%;
+    left: 43%;
+}
+.team__footer-btn{
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    position: absolute;
+    top: 55%;
+    left: 46%;
+}
+
+
+
+/*----------------- Testimonials -----------------------------*/
+.testimonials__slider{
+    background-color: #fff;
+    padding-top: 60px;
+    margin: 60px 0 100px 0;
+}
+.testimonials__slider-item{
+    display: flex;
+}
+.testimonials__slider .slick-dots{
+    position: absolute;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    right: 0;
+    bottom: -50px;
+}
+.testimonials__slider .slick-dots li{
+    margin: 10px;
+}
+.testimonials__slider .slick-dots button{
+    font-size: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #aaa;
+    border: 0;
+    outline: none;
+}
+.testimonials__slider .slick-dots li.slick-active button{
+    background-color: #19BD9A;
+}
+
+.testimonials__img{
+    flex: 0 0 30%;
+    width: 30%;
+    border-radius: 50%;
+    padding-left: 100px;
+}
+.testimonials__info{
+    flex: 0 0 70%;
+    width: 70%;
+}
+.testimonials__info-text{
+    padding: 10px 100px 10px 0;
+}
+.testimonials__info-name{
+    margin-top: 30px;
+    color: #19BD9A;
+    text-transform: uppercase;
+}
+.testimonials__info-position{
+    color: #464646;
+}
+
+/*----------------- Latest -----------------------------*/
+.latest{
+    background-image: url(../img/latest-bg.jpg);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    color: #fff;
+}
+.latest__tittle{
+    margin: 80px 0 0 100px;
+    text-align: left;
+    color: #fff;
+}
+.latest__text{
+    margin: 30px 0 0 100px;
+    text-align: left;
+    color: #fff;
+}
+.latest__slider{
+    margin: 100px 600px 100px 170px;
+}
+.latest__slider .slick-initialized .slick-slide{
+    display: block;
+}
+.latest__slider .slick-dots{
+    position: absolute;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    right: -50%;
+    transform: rotate(90deg);
+    
+}
+.latest__slider .slick-dots li{
+    margin: 10px;
+}
+.latest__slider .slick-dots button{
+    font-size: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #11ffee00;
+    border: 1px solid #81868e;
+    outline: none;
+}
+.latest__slider .slick-dots li.slick-active button{
+    background-color: #81868e;
+}
+
+
+.latest__slider-title{
+    font-size: 20px;
+}
+.latest__slider-name{
+    padding: 5px 5px 5px 0;
+}
+.latest__slider-name span{
+    font-style: italic;
+}
+.latest__slider-post{
+    padding: 5px 5px 5px 0;
+    color: #464646;
+}
+.latest__slider-text{
+    margin: 60px 0;
+    color: #81868e;
+}
+.latest__slider-btn{
+    margin-top: 50px;
+}
+.latest__slider-btn{
+    margin-bottom: 100px;
+}
+.latest__slider-btn:before{
+    content: '+ ';
 }

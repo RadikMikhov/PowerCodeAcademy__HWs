@@ -36,17 +36,7 @@ let photos = [
 
 let userList = document.getElementById('userList');
 
-for ( let i = 0; i < photos.length; i++ ) {
-    let newUser = document.createElement('div');
-    newUser.classList.add('user__item');
 
-    let userPhoto = document.createElement('img');
-    userPhoto.classList.add('user__photo');
-    userPhoto.setAttribute('src', photos[i].photo);
-    newUser.appendChild(userPhoto);
-
-    userList.appendChild(newUser);
-}
 
 let xhr = new XMLHttpRequest();
 
@@ -57,10 +47,17 @@ xhr.onreadystatechange = function() {
         for ( let i = 0; i < data.length; i++) {
             let newUserItem = document.createElement('div');
             newUserItem.classList.add('user__item');
+            
+            let userPhoto = document.createElement('img');
+            userPhoto.classList.add('user__photo');
+            userPhoto.setAttribute('src', photos[i].photo);
+            newUserItem.appendChild(userPhoto);
 
             let newInfo = document.createElement('div');
             newInfo.classList.add('user__info');
             newUserItem.appendChild(newInfo);
+
+            
 
             // Добавляем имя нового пользователя
             let newUserName = document.createElement('div');
