@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Bouncy</title>
 </head>
@@ -14,27 +16,30 @@
             <div class="nav__menu flexbox">
                 <div class="header__logo">Bouncy</div>
                 <nav class="menu">
+                    <button class="menu__btn">
+                        <span></span>
+                      </button>
                     <ul class="menu__list flexbox">
                         <li class="menu__item">
                             <a href="#">Hello</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#">About</a>
+                            <a href="#about">About</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#">Services</a>
+                            <a href="#services">Services</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#">Portfolio</a>
+                            <a href="#portfolio">Portfolio</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#">Team</a>
+                            <a href="#team">Team</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#">Blog</a>
+                            <a href="#blog">Blog</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#">Contact</a>
+                            <a href="#contact">Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -49,7 +54,7 @@
         </div>
     </header>
 
-    <section class="bouncy">
+    <!-- <section class="bouncy">
         <div class="container__small flexbox">
             <div class="bouncy__right">
                 <div class="tittle bouncy__tittle">This is bouncy</div>
@@ -62,7 +67,7 @@
         </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <div class="tittle about__tittle">Details about bouncy</div>
             <div class="about__text text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</div>
@@ -115,7 +120,7 @@
         </div>
     </section>
 
-    <section class="services">
+    <section class="services" id="services">
         <div class="container">
             <div class="tittle services__tittle">our services</div>
             <div class="text services__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</div>
@@ -209,7 +214,7 @@
         </div>
     </section>
 
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <div class="container">
             <div class="portfolio__title tittle">THE PORTFOLIO</div>
             <div class="portfolio__text text">At vero eos et accusamus et iusto odio dignissimos ducimus qui <br> blanditiis praesentium
@@ -239,41 +244,108 @@
             </ul>
             <div class="portfolio__img flexbox">
                 <div class="img__uno">
-
-                    <!-- <div class="img__item">
+                    <div class="img__item">
                         <img src="img/portfolio/bag.jpg" alt="bag">
                         <div class="img__hover">
                             <div class="hover__title">TITLE HERE</div>
-                            <div class="hover__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</div>
-                            <div class="hover__icon">
-                                <div class="icon__link">
-                                    
-                                </div>
-                                <div class="icon__heart">
-                                    <img src="img/png/heart.png" alt="heart">
-                                </div>
+                            <div class="hover__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
                             </div>
                         </div>
-                    </div> -->
-                    
-                    <img class="img__item" src="img/portfolio/bag.jpg" alt="bag">
-                    <img class="img__item" src="img/portfolio/table.jpg" alt="table">
-                    <img class="img__item" src="img/portfolio/ipa.jpg" alt="ipa">
+                    </div>
+                    <div class="img__item">
+                        <img src="img/portfolio/table.jpg" alt="table">
+                        <div class="img__hover">
+                            <div class="hover__title">TITLE HERE</div>
+                            <div class="hover__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img__item">
+                        <img src="img/portfolio/ipa.jpg" alt="ipa">
+                        <div class="img__hover">
+                            <div class="hover__title">TITLE HERE</div>
+                            <div class="hover__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="img__dos">
-                    <img class="img__item" src="img/portfolio/pinkBook.jpg" alt="pinkBook">
-                    <img class="img__item" src="img/portfolio/amber.jpg" alt="amber">
-                    <img class="img__item" src="img/portfolio/dustJacket.jpg" alt="dustJacket">
+                    <div class="img__item">
+                        <img src="img/portfolio/pinkBook.jpg" alt="pinkBook">
+                        <div class="img__hover">
+                            <div class="hover__title">TITLE HERE</div>
+                            <div class="hover__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img__item">
+                        <img src="img/portfolio/amber.jpg" alt="amber">
+                        <div class="img__hover">
+                            <div class="hover__title">TITLE HERE</div>
+                            <div class="hover__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img__item">
+                        <img src="img/portfolio/dustJacket.jpg" alt="dustJacket">
+                        <div class="img__hover">
+                            <div class="hover__title">TITLE HERE</div>
+                            <div class="hover__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="img__tres">
-                    <img class="img__item" src="img/portfolio/grayBook.jpg" alt="grayBook">                  
-                    <img class="img__item" src="img/portfolio/shelf.jpg" alt="shelf">
-                    <img class="img__item" src="img/portfolio/chair.jpg" alt="chair">
+                    <div class="img__item">
+                        <img src="img/portfolio/grayBook.jpg" alt="grayBook">
+                        <div class="img__hover">
+                            <div class="hover__title">TITLE HERE</div>
+                            <div class="hover__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img__item">
+                        <img src="img/portfolio/shelf.jpg" alt="shelf">
+                        <div class="img__hover">
+                            <div class="hover__title">TITLE HERE</div>
+                            <div class="hover__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img__item">
+                        <img src="img/portfolio/chair.jpg" alt="chair">
+                        <div class="img__hover">
+                            <div class="hover__title">TITLE HERE</div>
+                            <div class="hover__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="img__cuatro">
-                    <img class="img__item" src="img/portfolio/garbeo.jpg" alt="garbeo">
-                    <img class="img__item" src="img/portfolio/toursi.jpg" alt="toursi">
-                    <img class="img__item" src="img/portfolio/tablet.jpg" alt="tablet">
+                    <div class="img__item">
+                        <img src="img/portfolio/garbeo.jpg" alt="garbeo">
+                        <div class="img__hover">
+                            <div class="hover__title">TITLE HERE</div>
+                            <div class="hover__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img__item">
+                        <img src="img/portfolio/toursi.jpg" alt="toursi">
+                        <div class="img__hover">
+                            <div class="hover__title">TITLE HERE</div>
+                            <div class="hover__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img__item">
+                        <img src="img/portfolio/tablet.jpg" alt="tablet">
+                        <div class="img__hover">
+                            <div class="hover__title">TITLE HERE</div>
+                            <div class="hover__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="portfolio__footer">
@@ -284,7 +356,7 @@
         </div>
     </section>
 
-    <section class="team">
+    <section class="team" id="team">
         <div class="container">
             <div class="team__tittle tittle">THE TEAM</div>
             <div class="team__text text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</div>
@@ -435,7 +507,7 @@
         </div>
     </section>
 
-    <section class="latest">
+    <section class="latest" id="blog">
         <div class="latest__tittle tittle">latest news</div>
         <div class="latest__text text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</div>
         <div class="latest__slider">
@@ -502,7 +574,7 @@
         </form>
     </section>
 
-    <section class="contactUs">
+    <section class="contactUs"><a href="#" id="contact"></a>
         <div class="container">
             <div class="contact__tittle tittle">contact us</div>
             <div class="contact__text text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</div>
@@ -547,7 +619,7 @@
                         <input type="text" class="contact__firstName" placeholder="Your name">
                     </label>
                     <label>
-                        <input type="email" class="contact__mail" placeholder="Email address">
+                        <input type="email" name="email" class="contact__mail" placeholder="Email address">
                     </label>
                     <label>
                         <input type="text" class="contact__subject" placeholder="Subject">
@@ -556,9 +628,25 @@
                 <textarea name="coments" class="contact__textarea"></textarea>
                 <a href="#" class="coment__submit">submit now</a>
             </form>
+            <div class="contact__map">
+                <iframe class="bounce__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d620.6247873889251!2d0.031716669866288585!3d51.522404098799065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a7dba4e2d7eb%3A0x495a9d52dd526dbf!2zMTAxIFByaW5jZSBSZWdlbnQgTG4sIExvbmRvbiBFMTMgOFJXLCDQktC10LvQuNC60L7QsdGA0LjRgtCw0L3QuNGP!5e0!3m2!1sru!2sua!4v1623178035295!5m2!1sru!2sua"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
         </div>
     </section>
 
+    <footer>
+        <div class="footer__tittle">bouncy</div>
+        <div class="footer__copyright">Copyright 2015. All rights Reserved</div>
+        <div class="footer__icon">
+            <a href="#" class="footer__icon-item"><img src="img/link__facebook.png" alt="facebook"></a>
+            <a href="#" class="footer__icon-item"><img src="img/link__twitter.png" alt="twitter"></a>
+            <a href="#" class="footer__icon-item"><img src="img/link__linkedin.png" alt="linkedin"></a>
+            <a href="#" class="footer__icon-item"><img src="img/link__instagramm.png" alt="instagramm"></a>
+            <a href="#" class="footer__icon-item"><img src="img/link__vimeo.png" alt="vimeo"></a>
+        </div>
+    </footer>
+    
+    <a class="up__arrow" href="#top"><img src="img/up.png" alt="up"></a> -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
