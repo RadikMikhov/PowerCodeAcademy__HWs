@@ -37,6 +37,7 @@ section{
     margin: 0 auto;
 }
 .container__small{
+    display: flex;
     max-width: 1030px;
     width: 100%;
     margin: 0 auto;
@@ -45,12 +46,10 @@ section{
     width: 100%;
 }
 .container__header{
+    display: flex;
     flex-direction: column;
 	justify-content: space-between;
     min-height: 100vh;
-}
-.flexbox{
-    display: flex;
 }
 .tittle{
     font-family: 'Source Sans Pro';
@@ -102,17 +101,20 @@ header{
     color: #fff;
     font-size: 25px;
     line-height: 25px;
-    padding-top: 10px;
     position: absolute;
     left: 10%;
 }
 .nav__menu{
-    padding-top: 25px;
+    display: flex;
+    padding-top: 30px;
     justify-content: flex-end;
     margin-right: 10%;
 }
-.menu__btn{
+.menu__btn-burger{
     display: none;
+}
+.menu__list{
+    display: flex;
 }
 .menu__item{
     font-size: 16px;
@@ -181,7 +183,6 @@ header{
 }
 .bouncy__right{
     width: 50%;
-    margin-top: 100px;
 }
 .bouncy__text{
     width: 470px;
@@ -205,6 +206,7 @@ header{
     width: 460px;
 }
 .about__icons{
+    display: flex;
     width: 220px;
     margin: 60px auto 0;
 }
@@ -254,6 +256,7 @@ header{
     background-color: #fff;
 }
 .works__slider{
+    display: flex;
     margin-top: 60px;
 }
 .slider__item{
@@ -312,6 +315,7 @@ header{
     left: 33%;
 }
 .slider__footer{
+    display: flex;
     background-image: url(../img/slider__footer.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -332,9 +336,11 @@ header{
 
 /*----------------- Services -----------------------------*/
 .services__list{
+    display: flex;
     margin-top: 60px;
 }
 .services__left{
+    display: flex;
     width: 50%;
     margin-right: 40px;
 }
@@ -355,6 +361,7 @@ header{
     line-height: 28px;
 }
 .services__right-circles{
+    display: flex;
     margin-top: 60px;
 }
 .services__circle{
@@ -434,6 +441,7 @@ svg{
     background-color: #F3F3F3;
 }
 .portfolio__menu{
+    display: flex;
     margin: 80px auto 0;
     width: 600px;
     justify-content: space-evenly;
@@ -449,9 +457,9 @@ svg{
 }
 .portfolio__item a:hover{
     border-bottom: 2px solid #19BD9A;
-    
 }
 .portfolio__img{
+    display: flex;
     margin-top: 60px;
 }
 .img__uno,
@@ -814,6 +822,7 @@ svg{
 
 /*----------------- Price -----------------------------*/
 .price__card{
+    display: flex;
     margin: 60px auto 100px;
     justify-content: space-between;
     max-width: 900px;
@@ -906,6 +915,7 @@ svg{
 
 /*----------------- ContactUs -----------------------------*/
 .contact__card{
+    display: flex;
     margin: 60px auto 100px;
     width: 1000px;
 }
@@ -939,6 +949,9 @@ svg{
     width: 940px;
     margin: 80px auto 120px;
     color: #D8DCE0;
+}
+.form__input{
+    display: flex;
 }
 .contact__firstName,
 .contact__mail,
@@ -1014,3 +1027,254 @@ footer{
 }
 
 
+@media all and (max-width: 1170px)  {
+    .bouncy__img {
+        margin: 80px 0 0 80px;
+    }
+    .bouncy__right{
+        width: 50%;
+        margin: 0 50px 0 5%;
+    }
+    .creative{
+        margin: 0 5%;
+    }
+    .creative__text-left {
+        padding-right: 50px
+    }
+    .slider__item{
+        height: 270px;
+    }
+    .text__vintage, 
+    .text__branding, 
+    .text__design, 
+    .text__ux {
+        left: 33%;
+    }
+    .slider__text{
+        font-size: 14px;
+    }
+}
+
+@media all and (max-width: 850px) {
+    .nav__menu{
+        margin-top: 20px;
+        justify-content: center;
+        margin-right: 1px;
+    }
+    .header__logo{
+      text-align: center;
+      top: 2%;
+      right: 10%;
+    }
+    .creative__text-left {
+        padding-right: 20px
+    }
+    .slider__item{
+        height: 200px;
+    }
+    .text__vintage, 
+    .text__branding, 
+    .text__design, 
+    .text__ux {
+        left: 23%;
+    }
+}
+@media all and (max-width: 768px) {
+    .tittle{
+        font-size: 16px;
+        margin-top: 30px;
+    }
+    .text{
+        font-size: 10px;
+        margin-top: 20px;
+    }
+    .bouncy__text{
+        width: 350px;
+        margin-top: 30px;
+    }
+    .bouncy__right{
+        margin: 20px 20px 20px 80px;
+    }
+    .bouncy__img {
+        margin: 30px 0 0 10px;
+    }
+    .works__slider {
+        margin-top: 30px;
+    }
+    .slider__footer{
+        display: block;
+    }
+    .slider__footer-text{
+        padding: 10px;
+        text-align: center;
+    }
+    .slider__footer-text{
+        margin: 20px;
+    }
+}
+@media all and (max-width: 650px) {
+    .container__small{
+        display: block;
+        width: 90%;
+    }.header__text{
+        width: 90%;
+    }
+    .bouncy__right{
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .bouncy__img{
+        margin: 0 30%;
+    }
+    .bouncy__text {
+        width: 100%;
+        text-align: center;
+    }
+    .bouncy__btn {
+        margin: 10% auto;
+    }
+    .about__text {
+        width: 80%;
+    }
+    .creative{
+        text-align: center;
+    }
+    .creative__text{
+        display: block;
+    }
+    .creative__text-left {
+        width: 100%;
+        padding: 10px;
+    }
+    .creative__text-right {
+        width: 100%;
+        padding: 10px;
+    }
+    .about {
+        margin-bottom: 30px;
+    }
+    .slider__item{
+        height: 170px;
+    }
+    .slider__text{
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+    .text__vintage, 
+    .text__branding, 
+    .text__design, 
+    .text__ux {
+        top: 35%;
+        left: 30%;
+    }
+}
+
+@media all and (max-width: 550px) {
+    
+    .menu__btn-burger{
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        z-index: 10;
+        left: 40%;
+    }
+    .menu__btn-burger span{
+        position: absolute;
+        background-color: #fff;
+        left: 0;
+        top: 9px;
+        width: 100%;
+        height: 2px;
+        transition: all 0.5s;
+    }
+    .menu__btn-burger:after,
+    .menu__btn-burger:before{
+        content: '';
+        background-color: #fff;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        transition: all 0.5s;
+    }
+    .menu__btn-burger:before{
+        top: 0;
+    }
+    .menu__btn-burger:after{
+        bottom: 0;
+    }
+    .menu__btn-burger.active:before{
+        transform: rotate(45deg);
+        top: 9px;
+    }
+    .menu__btn-burger.active:after{
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+    .menu__btn-burger.active span{
+        transform: scale(0);
+    }
+    .header__logo{
+        top: 1%;
+        left: -50%;
+        z-index: 10;
+    }
+    .header__menu{
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #19BD9A;
+        transition: all 0.5s;
+    }
+    .header__menu.active{
+        top: 0;
+    }
+    .menu__list{
+        display: block;
+        margin: 40px 30px;
+    }
+    .menu__item:hover{
+        border-top: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+    }
+    .nav__menu{
+        margin-top: 0;
+        padding-top: 10px;
+    }
+    .slider__item{
+        height: 150px;
+    }
+    
+}
+
+@media all and (max-width: 425px) {
+    .header__tittle{
+        font-size: 25px;
+    }
+    .header__text{
+        font-size: 15px;
+        width: 80%;
+    }
+    .tittle{
+        margin-top: 30px;
+    }
+    .bouncy__img{
+        margin: 0 20%;
+    }
+    .slider__item{
+        height: 120px;
+    }
+    .slider__text{
+        font-size: 8px;
+        letter-spacing: 2px;
+    }
+    .text__vintage, 
+    .text__branding, 
+    .text__design, 
+    .text__ux {
+        left: 25%;
+    }
+}

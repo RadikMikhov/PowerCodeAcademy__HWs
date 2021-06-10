@@ -1,3 +1,9 @@
+$(document).ready(function() {
+    $('.menu__btn-burger').click(function(event) {
+        $('.menu__btn-burger,.header__menu').toggleClass('active');
+    })
+});
+
 $('.team__slider').slick({
     slidesToShow: 1,
     slidesToScrol: 1,
