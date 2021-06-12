@@ -538,7 +538,7 @@ svg{
 }
 .team__slider.slick-initialized .slick-slide {
     display: flex;
-    padding: 20PX;
+    padding: 20px;
 }
 .team__slider .slick-dots{
     position: absolute;
@@ -575,14 +575,6 @@ svg{
     max-width: 50%;
     text-align: right;
     margin-right: 40px;
-}
-.team__line{
-    border: 1px solid #19BD9A;
-    width: 50px;
-    position: absolute;
-    right: -5%;
-    top: 10%;
-    transform: rotate(90deg);
 }
 .team__info-tittle{
     font-size: 20px;
@@ -756,39 +748,13 @@ svg{
     color: #fff;
 }
 .latest__slider{
-    margin: 100px 600px 100px 170px;
-}
-.latest__slider-item{
-    padding: 20px;
-}
-.latest__slider .slick-initialized .slick-slide{
-    display: block;
-}
-.latest__slider .slick-dots{
-    position: absolute;
-    display: flex;
-    list-style: none;
-    justify-content: center;
-    align-items: center;
-    top: 0;
-    bottom: 0;
-    right: -50%;
-    transform: rotate(90deg);  
+    margin: 100px 400px 100px 170px;
 }
 .latest__slider .slick-dots li{
-    margin: 10px;
+    display: none;
 }
-.latest__slider .slick-dots button{
-    font-size: 0;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background-color: #11ffee00;
-    border: 1px solid #81868e;
-    outline: none;
-}
-.latest__slider .slick-dots li.slick-active button{
-    background-color: #81868e;
+.latest__slider-item{
+    padding: 0 20px;
 }
 .latest__slider-title{
     font-size: 20px;
@@ -1053,6 +1019,49 @@ footer{
     .slider__text{
         font-size: 14px;
     }
+    .circle{
+        margin: 0 10px;
+    }
+    .persent{
+        left: 33%;
+    }
+    .services__left-icons{
+        margin: 0 40px;
+    }
+    .service__right-text{
+        margin: 0;
+    }
+    .impressed__item {
+        width: 50%;
+    }
+    .impressed__item {
+        margin-left: 5%;
+    }
+    .impressed__img{
+        right: 2%;
+        width: 350px;
+        height: 300px;
+    }
+    .impressed__bouncy{
+        right: 13%;
+    }
+    .team__footer-text{
+        left: 38%;
+    }
+    .team__footer-btn{
+        left: 43%;
+    }
+    .latest__slider{
+        position: relative;
+        margin: 100px 300px 100px 170px;
+    }
+    .latest__slider .slick-dots{
+        position: absolute;
+        left: 250%;
+    }
+    .latest__slider {
+        margin: 50px 200px 50px 170px;
+    }
 }
 
 @media all and (max-width: 850px) {
@@ -1077,6 +1086,53 @@ footer{
     .text__design, 
     .text__ux {
         left: 23%;
+    }
+    .services__left,
+    .services__right{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .services__list{
+        display: block;
+    }
+    .services__right-circles{
+        justify-content: space-evenly;
+        margin-top: 30px;
+    }
+    .impressed{
+        margin-top: 30px;
+    }
+    .impressed__img{
+        display: none;
+    }
+    .impressed__bouncy{
+        display: none;
+    }
+    .team__footer-text{
+        top: 18%;
+        font-size: 16px;
+    }
+    .team__footer-btn{
+        top: 45%;
+    }
+    .testimonials__img {
+        padding-left: 50px;
+    }
+    .latest__slider {
+        margin: 50px 150px 50px 170px;
+    }
+    .latest__tittle {
+        margin: 30px 0 0 100px;
+    }
+    .latest__slider-text {
+        margin: 30px 0;
+    }
+    .latest__slider-title {
+    font-size: 20px;
+    }
+    .card__item-info{
+        font-size: 10px;
+        padding: 0;
     }
 }
 @media all and (max-width: 768px) {
@@ -1105,12 +1161,53 @@ footer{
         display: block;
     }
     .slider__footer-text{
-        padding: 10px;
+        padding: 20px 10px;
         text-align: center;
+        margin: 0;
     }
-    .slider__footer-text{
-        margin: 20px;
+    .slider__footer{
+        position: relative;
     }
+    .slider__footer-btn{
+        position: absolute;
+        top: 20%;
+        left: 40%;
+    }
+    .services__right-circles{
+        margin-top: 20px;
+    }
+    .impressed__item{
+        width: 70%;
+    }
+    .team__item{
+        margin: 0;
+    }
+    .team__item-photo{
+        flex: 0 0 40%;
+        max-width: 40%;
+    }
+    .team__item-info{
+        flex: 0 0 60%;
+        max-width: 60%; 
+    }
+    .progress__line80,
+    .progress__line65,
+    .progress__line75{
+        width: 300px;
+    }
+    .latest__slider {
+        margin: 30px 50px 50px 120px;
+    }
+    .latest__slider-title {
+        font-size: 16px;
+    }
+    .card__item-info li {
+        padding: 5px 0 5px 15px;
+    }
+    .price__card-item {
+        margin: 0 20px;
+    }
+    
 }
 @media all and (max-width: 650px) {
     .container__small{
@@ -1168,6 +1265,86 @@ footer{
         top: 35%;
         left: 30%;
     }
+    .services__left-icons{
+        margin: 0 20px 0 0;
+    }
+    .team__item-photo img{
+        width: 250px;
+        height: 300px;
+    }
+    .team__info-text {
+        margin-top: 10px;
+        font-size: 10px;
+    }
+    .team__info-progress {
+        margin-top: 10px;
+    }
+    .progress__line80,
+    .progress__line65,
+    .progress__line75{
+        width: 200px;
+    }
+    .team__footer-text{
+        top: 15%;
+    }
+    .team__footer-btn{
+        left: 42%;
+    }
+    .testimonials__slider-item.slick-slide{
+        display: block;
+    }
+    .testimonials__slider {
+        background-color: #fff;
+        padding-top: 30px;
+        margin: 30px 0 50px 0;
+    }
+    .testimonials__slider-item{
+        position: relative;
+    }
+    .testimonials__img img{
+        position: absolute;
+        top: 0;
+        left: 40%;
+    }
+    .testimonials__info{
+        margin: 150px auto 10px;
+    }
+    .testimonials__info-text{
+        padding: 0;
+    }
+    .testimonials__slider .slick-dots {
+        top: 95%;
+    }
+    .testimonials__info-name {
+        margin-top: 15px;
+    }
+    .latest__slider-text{
+        font-size: 12px;
+    }
+    .latest__tittle{
+        margin: 30px 0 0 30px;
+    }
+    .latest__text {
+        margin: 30px 0 0 30px;
+    }
+    .latest__slider {
+        margin: 30px 50px 50px 70px;
+    }
+    .price__card{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .card__info-btn{
+        margin-top: 40px;
+    }
+    .sub__mail{
+        margin: 0 20px;
+        width: 90%;
+    }
+    .submit__btn{
+        margin: 10px 0 0 35%;
+    }
+    
 }
 
 @media all and (max-width: 550px) {
@@ -1247,7 +1424,75 @@ footer{
     .slider__item{
         height: 150px;
     }
-    
+    .slider__footer a{
+        font-size: 10px;
+        margin: 50px 0 0 11px;
+    }
+    .btn__link{
+        width: 80px;
+        height: 25px;
+        padding: 0;
+    }
+    .services__left{
+        display: block;
+    }
+    .services__left-tittle{
+        text-align: center;
+        margin-top: 20px;
+    }
+    .services__left-icons{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .impressed__item{
+        width: 90%;
+    }
+    .team__item-photo img{
+        width: 200px;
+        height: 250px;
+    }
+    .team__info-tittle{
+        font-size: 14px;
+        padding: 0;
+    }
+    .team__info-position{
+        font-size: 10px;
+    }
+    .team__info-text{
+        margin: 0 auto;
+        line-height: 15px;
+    }
+    .progress__text{
+        font-size: 10px;
+    }
+    .team__item-photo{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .team__item-info{
+        flex: 0 0 50%;
+        max-width: 50%; 
+    }
+    .progress__line80,
+    .progress__line65,
+    .progress__line75{
+        width: 175px;
+    }
+    .team__footer-text{
+        top: 10%;
+        left: 35%;
+        font-size: 14px;
+    }
+    .team__footer-btn{
+        font-size: 10px;
+    }
+    .sub__mail{
+        margin: 0 20px;
+        width: 70%;
+    }
+    .submit__btn{
+        margin: 10px 0 0 20px;
+    }
 }
 
 @media all and (max-width: 425px) {
@@ -1276,5 +1521,50 @@ footer{
     .text__design, 
     .text__ux {
         left: 25%;
+    }
+    .slider__footer a{
+        margin: 50px 0 0 0;
+    }
+    .circle{
+        margin: 0;
+    }
+    .team__item{
+        display: block;
+        position: relative;
+    }
+    .team__item-photo img{
+        position: absolute;
+        top: 0;
+        left: 25%;
+    }
+    .team__item-info{
+       margin: 250px 20px 0 20px;
+       max-width: 90%; 
+       text-align: center;
+    }
+    .team__slider.slick-initialized .slick-slide{
+        display: block;
+    }
+    .team__footer{
+        margin-top: 50px;
+    }
+    .team__footer-text{
+        top: 5%;
+        left: 33%;
+        font-size: 10px;
+    }
+    .team__footer-btn{
+        top: 40%;
+        left: 38%;
+    }
+    .testimonials__img img{
+        left: 30%;
+    }
+    .latest__slider {
+        margin: 30px 50px 50px 30px;
+    }
+    .sub__mail{
+        width: 50%;
+        margin-right: 100px;
     }
 }
