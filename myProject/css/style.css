@@ -461,6 +461,8 @@ svg{
 .portfolio__img{
     display: flex;
     margin-top: 60px;
+    width: 100%;
+    justify-content: space-around;
 }
 .img__uno,
 .img__dos,
@@ -474,7 +476,9 @@ svg{
     position: relative;
 }
 .img__item img{
-    z-index: 7; 
+    z-index: 7;
+    width: 90%;
+     
 }
 .img__item:hover{
     z-index: 10;
@@ -488,13 +492,14 @@ svg{
     background-color: rgba(0, 0, 0, 0.9);
     padding: 10%;
     opacity: 0;
+    width: 90%;
 }
 .img__hover:hover{
     opacity: 1;
 }
-.hover__title{
+.hover__tittle{
     color: #19bd9a;
-    margin-top: 10%;
+    margin-top: 5%;
     padding: 5%;
     font-family: 'Source Sans Pro';
     font-size: 20px;
@@ -503,7 +508,7 @@ svg{
 }
 .hover__text{
     color: #b2b3b3;
-    padding: 5%;
+    padding: 3%;
     font-size: 12px;
     margin-top: 10%;
 }
@@ -512,12 +517,15 @@ svg{
     margin-top: 40px;
     position: relative;
 }
+.portfolio__footer img{
+    width: 100%;
+}
 .portfolio__footer-text{
     color: #fff;
     font-size: 20px;
     position: absolute;
     top: 30%;
-    right: 23%;
+    right: 20%;
 }
 .portfolio__footer-btn{
     color: #fff;
@@ -668,7 +676,6 @@ svg{
     top: 55%;
     left: 46%;
 }
-
 
 
 /*----------------- Testimonials -----------------------------*/
@@ -883,10 +890,11 @@ svg{
 .contact__card{
     display: flex;
     margin: 60px auto 100px;
-    width: 1000px;
+    justify-content: space-between;
+    max-width: 900px;
 }
 .contact__item{
-    width: 300px;
+    width: 270px;
     height: 300px;
     background-color: #fff;
     margin: 0 20px;
@@ -918,6 +926,9 @@ svg{
 }
 .form__input{
     display: flex;
+}
+.input__br{
+    display: none;
 }
 .contact__firstName,
 .contact__mail,
@@ -980,7 +991,6 @@ footer{
     border-radius: 50%;
     margin-left: 10px;
 }
-
 .up__arrow{
     position: fixed;
     bottom: 1%;
@@ -1062,9 +1072,32 @@ footer{
     .latest__slider {
         margin: 50px 200px 50px 170px;
     }
+    .contact__firstName,
+    .contact__mail,
+    .contact__subject{
+        width: 250px;
+        padding: 5px 5px 5px 15px;
+    }
+    .contact__textarea {
+        width: 830px;
+    }
+    .coment__submit {
+        width: 830px;
+    }
 }
 
+@media all and (max-width: 1000px) {
+    .portfolio__footer-text{
+        right: 13%;
+    }
+
+}
+
+
 @media all and (max-width: 850px) {
+    .tittle{
+        margin-top: 50px;
+    }
     .nav__menu{
         margin-top: 20px;
         justify-content: center;
@@ -1112,6 +1145,30 @@ footer{
         top: 18%;
         font-size: 16px;
     }
+    .portfolio__menu{
+        margin-top: 50px;
+    }
+    .portfolio__img {
+        margin-top: 30px;
+    }
+    .portfolio__footer-text{
+        right: 13%;
+        top: 25%;
+        margin: 0 10px;
+        font-size: 16px;
+    }
+    .portfolio__footer-btn{
+        right: 40%;
+        top: 50%;
+    }
+    .hover__tittle{
+        font-size: 16px;
+        margin-top: 3%;
+    }
+    .hover__text{
+        font-size: 10px;
+        margin-top: 1%;
+    }
     .team__footer-btn{
         top: 45%;
     }
@@ -1133,6 +1190,21 @@ footer{
     .card__item-info{
         font-size: 10px;
         padding: 0;
+    }
+    .form__input{
+        display: block;
+    }
+    .contact__firstName,
+    .contact__mail,
+    .contact__subject{
+        width: 730px;
+        margin: 10px 20px;
+    }
+    .contact__textarea {
+        width: 730px;
+    }
+    .coment__submit {
+        width: 730px;
     }
 }
 @media all and (max-width: 768px) {
@@ -1179,6 +1251,20 @@ footer{
     .impressed__item{
         width: 70%;
     }
+    .portfolio__menu {
+        margin-top: 30px;
+    }
+    .portfolio__footer-text{
+        right: 13%;
+        top: 25%;
+        font-size: 14px;
+    }
+    .hover__tittle{
+        font-size: 14px;
+    }
+    .hover__text{
+        line-height: 15px;
+    }
     .team__item{
         margin: 0;
     }
@@ -1204,16 +1290,39 @@ footer{
     .card__item-info li {
         padding: 5px 0 5px 15px;
     }
-    .price__card-item {
-        margin: 0 20px;
+    .price__card{
+        margin: 30px auto 30px;
     }
-    
+    .price__card-item {
+        margin: 20px 20px 0 20px;
+    }
+    .contact__card {
+        margin: 30px auto 30px;
+    }
+    .contact__item{
+        margin: 10px 10px 10px 0;
+    }
+    .contact__form {
+        margin: 50px auto;
+    }
+    .contact__firstName,
+    .contact__mail,
+    .contact__subject{
+        width: 600px;
+    }
+    .contact__textarea {
+        width: 600px;
+    }
+    .coment__submit {
+        width: 600px;
+    }
 }
 @media all and (max-width: 650px) {
     .container__small{
         display: block;
         width: 90%;
-    }.header__text{
+    }
+    .header__text{
         width: 90%;
     }
     .bouncy__right{
@@ -1267,6 +1376,24 @@ footer{
     }
     .services__left-icons{
         margin: 0 20px 0 0;
+    }
+    .portfolio__menu{
+        width: 540px;
+    }
+    .portfolio__item a{
+        font-size: 14px;
+    }
+    .portfolio__footer-text{
+        right: 18%;
+        top: 15%;
+        font-size: 12px;
+    }
+    .hover__tittle {
+        font-size: 12px;
+        margin-top: 1%;
+    }
+    .hover__text{
+        overflow: scroll;
     }
     .team__item-photo img{
         width: 250px;
@@ -1343,6 +1470,25 @@ footer{
     }
     .submit__btn{
         margin: 10px 0 0 35%;
+    }
+    .contact__card{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .contact__form {
+        margin: 30px auto;
+    }
+    .contact__firstName,
+    .contact__mail,
+    .contact__subject{
+        width: 500px;
+    }
+    .contact__textarea {
+        width: 500px;
+        height: 150px;
+    }
+    .coment__submit {
+        width: 500px;
     }
     
 }
@@ -1444,8 +1590,23 @@ footer{
         display: flex;
         justify-content: space-evenly;
     }
+    .impressed__tittle {
+        margin: 30px 0;
+    }
     .impressed__item{
         width: 90%;
+    }
+    .portfolio__menu{
+        width: 400px;
+    }
+    .portfolio__footer-text{
+        top: 5%;
+        right: 10%;
+        text-align: center;
+        line-height: 15px;
+    }
+    .portfolio__footer-btn{
+        width: 120px;
     }
     .team__item-photo img{
         width: 200px;
@@ -1493,6 +1654,21 @@ footer{
     .submit__btn{
         margin: 10px 0 0 20px;
     }
+    
+    .contact__firstName,
+    .contact__mail,
+    .contact__subject{
+        width: 380px;
+    }
+    .contact__textarea {
+        width: 380px;
+        height: 150px;
+        margin: 10px 20px;
+    }
+    .coment__submit {
+        width: 380px;
+        display: block;
+    }
 }
 
 @media all and (max-width: 425px) {
@@ -1532,6 +1708,18 @@ footer{
         display: block;
         position: relative;
     }
+    .portfolio__menu{
+        width: 300px;
+    }
+    .portfolio__item a{
+        font-size: 10px;
+    }
+    .portfolio__footer-text{
+        right: 0;
+    }
+    .portfolio__footer-btn {
+        right: 32%;
+    }
     .team__item-photo img{
         position: absolute;
         top: 0;
@@ -1566,5 +1754,21 @@ footer{
     .sub__mail{
         width: 50%;
         margin-right: 100px;
+    }
+    .contact__firstName,
+    .contact__mail,
+    .contact__subject{
+        width: 280px;
+    }
+    .contact__textarea {
+        width: 280px;
+        height: 100px;
+    }
+    .coment__submit {
+        width: 280px;
+    }
+    .bounce__map{
+        width: 100%;
+        height: 300px;
     }
 }
